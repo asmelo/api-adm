@@ -9,24 +9,5 @@ GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
 GET     /message                    controllers.AsyncController.message
 
-# Lancamento
-POST    /importarArquivoOfx         controllers.LancamentoController.importarArquivoOfx
-GET     /lancamentos                controllers.LancamentoController.listaLancamentos
-POST    /lancamentos                controllers.LancamentoController.salvaLancamento
-GET     /lancamentos/:idLancamento  controllers.LancamentoController.consultaLancamento(idLancamento: Int)
-DELETE  /lancamentos/:idLancamento  controllers.LancamentoController.excluiLancamento(idLancamento: Int)
-PUT     /lancamentos/:idLancamento  controllers.LancamentoController.atualizaLancamento(idLancamento: Int)
-
-# Relatório
-GET     /listaSalarios                      controllers.LancamentoController.listaSalarios
-GET     /listaSubcategorias                 controllers.LancamentoController.listaSubcategorias
-GET     /listaCategorias                    controllers.LancamentoController.listaCategorias
-GET     /listaEntradas                      controllers.LancamentoController.listaEntradas
-GET     /listaTransferencias                controllers.LancamentoController.listaTransferencias
-GET     /listaSubcategoriasMonitoramento    controllers.LancamentoController.listaSubcategoriasMonitoramento
-
-# Subcategoria
-GET     /subcategoria               controllers.SubcategoriaController.listaSubcategorias
-
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

@@ -1,4 +1,4 @@
-name := """api-financeiro"""
+name := """play-java"""
 
 version := "1.0-SNAPSHOT"
 
@@ -9,7 +9,3 @@ scalaVersion := "2.11.11"
 libraryDependencies += javaJdbc
 libraryDependencies += cache
 libraryDependencies += javaWs
-libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.45"
-libraryDependencies += "org.jdbi" % "jdbi" % "2.78"
-libraryDependencies += filters
-
